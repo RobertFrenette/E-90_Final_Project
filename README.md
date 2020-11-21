@@ -19,7 +19,7 @@ For my project, I'll implement two CodePipeline pipelines:
 
 ![Diagram](img/img_2.jpg?raw=true "Diagram")
 
-[Staic Site](https://)
+[Staic Site](https://github.com/RobertFrenette/E-90_Final_Project/tree/master/MyContacts-static-demo)
 
 
 - CodePipeline to build and deploy code for an Angular Application in a GitHub Repo to an S3 Bucket. The site will be accessed via a CloudFront Distribution.
@@ -27,4 +27,4 @@ For my project, I'll implement two CodePipeline pipelines:
 ![Diagram](img/img_3.jpg?raw=true "Diagram")
 
 
-[Angular Site](https://)
+[Angular Site](https://github.com/RobertFrenette/E-90_Final_Project/tree/master/MyContacts-Angular-demo)
