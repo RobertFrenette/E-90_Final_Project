@@ -3,7 +3,7 @@
 
 ## Continuous Integration / Continuous Delivery (CI / CD) using AWS CodePipeline
 
-The focus of my final project is automated code build and deployment from a GitHub repository to an S3 Bucket, configured for static web hosting, using [AWS CodePipeline](https://https://aws.amazon.com/codepipeline/).
+The focus of my final project is automated code build and deployment from a GitHub repository to an S3 Bucket, configured for static web hosting, using [AWS CodePipeline](https://aws.amazon.com/codepipeline/).
 
 ![Diagram](img/img_1.png?raw=true "Diagram")
 
