@@ -1,0 +1,12 @@
+body {
+  padding-top: 3.5rem;
+}
+.jumbotron {
+  background-color: #ffffff;
+}
+.redirect {
+  cursor: pointer;
+}
+.card {
+  width: 15rem;
+}

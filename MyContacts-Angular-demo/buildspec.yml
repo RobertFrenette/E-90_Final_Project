@@ -1,0 +1,43 @@
+version: 0.2 
+
+env:
+   variables:
+       CACHE_CONTROL: '86400'
+       BUCKET_NAME: 'e90-angular-demo'
+       BUILD_FOLDER: 'dist'
+       APP_NAME: 'client'
+       BUILD_ENV: 'prod'
+phases:
+ install:
+   runtime-versions:
+       nodejs: 10
+   commands:
+       - apt-get update
+       - echo Installing Headless Chrome...
+       - apt-get install -y fonts-liberation libasound2 libnspr4 libnss3 libx11-xcb1 xdg-utils libxss1 libappindicator1 libindicator7
+       - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+       - dpkg -i google-chrome*.deb
+ pre_build:
+   commands:
+       - echo Installing NPM dependencies...
+       - npm install
+       - npm install -g @angular/cli
+       - echo ng --version
+ build:
+   commands:
+       - echo Starting Build...
+       - ng build --${BUILD_ENV} --verbose
+       - echo Starting Tests...
+       - npm run test:ci
+ post_build:
+   commands:
+       - echo Clearing Bucket...
+       - aws s3 rm s3://${BUCKET_NAME} --recursive
+       - echo Copying files to Bucket...
+       - aws s3 sync ./${BUILD_FOLDER}/${APP_NAME} s3://${BUCKET_NAME} --delete --acl public-read 
+       - echo Build complete on 'date' 
+artifacts:
+   files:
+       - '**/*'
+   base-directory: '${BUILD_FOLDER}/${APP_NAME}/'
+   discard-paths: no
