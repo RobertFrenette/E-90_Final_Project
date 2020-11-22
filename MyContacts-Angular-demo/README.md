@@ -11,6 +11,16 @@
 - ```ng serve```
 - Load [http://localhost:4200](http://localhost:4200) in your Browser
 
+
+## To test this App (Using Chrome)
+- Open a CMD Terminal
+- ```ng test```
+
+## To test this App (Headless, for CI/CD)
+- Open a CMD Terminal
+- ```npm run test:ci```
+
+
 ## Videos
 - [App Demo and code overview](https://www.youtube.com/watch?v=e_Anq0Q_bLA)
 - CodePipeline: TBD
