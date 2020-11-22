@@ -23,4 +23,4 @@
 
 ## Videos
 - [App Demo and code overview](https://www.youtube.com/watch?v=e_Anq0Q_bLA)
-- CodePipeline: TBD
+- [CodePipeline](https://www.youtube.com/watch?v=l5geOeCp3GI)
