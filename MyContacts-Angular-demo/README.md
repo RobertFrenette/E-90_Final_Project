@@ -19,8 +19,3 @@
 ## To test this App (Headless, for CI/CD)
 - Open a CMD Terminal
 - ```npm run test:ci```
-
-
-## Videos
-- [App Demo and code overview](https://www.youtube.com/watch?v=e_Anq0Q_bLA)
-- [CodePipeline](https://www.youtube.com/watch?v=l5geOeCp3GI)
