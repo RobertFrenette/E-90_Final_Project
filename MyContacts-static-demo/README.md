@@ -5,7 +5,3 @@
 ## To run this App
 - Fork / Clone Repo
 - Launch ```index.html``` in your Browser
-
-## Videos
-- [App Demo and code overview](https://www.youtube.com/watch?v=wMQHqgd9ths)
-- [CodePipeline](https://www.youtube.com/watch?v=JVAfR3advJY)
